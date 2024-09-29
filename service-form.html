@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Garage Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Form Section -->
+    <main>
+        <section class="form-section">
+            <h2>Request a Service</h2>
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DWU000009TFYV"
+                method="POST">
+                
+                <input type="hidden" name="oid" value="00DWU000009TFYV">
+                <input type="hidden" name="retURL" value="http://www.google.com">
+
+                <!-- Lead Source hidden and set to Web by default -->
+                <input type="hidden" id="lead_source" name="lead_source" value="Web">
+
+                <h3>Personal Information</h3>
+                <label for="first_name">First Name *</label>
+                <input id="first_name" maxlength="40" name="first_name" type="text" placeholder="Your First Name" required>
+
+                <label for="last_name">Last Name </label>
+                <input id="last_name" maxlength="80" name="last_name" type="text" placeholder="Your Last Name" >
+
+                <label for="phone">Phone *</label>
+                <input id="phone" maxlength="40" name="phone" type="text" placeholder="Your Phone Number" required>
+
+                <label for="email">Email *</label>
+                <input id="email" maxlength="80" name="email" type="email" placeholder="Your Email Address" required>
+
+                <h3>Vehicle Information & Service</h3>
+                <label for="vehicle_category">Vehicle Category *</label>
+                <select id="vehicle_category" name="00NWU000003oM5G" required>
+                    <option value="">--None--</option>
+                    <option value="2-wheeler">2-wheeler</option>
+                    <option value="4-wheeler">4-wheeler</option>
+                </select>
+
+                <label for="vehicle_brand">Vehicle Brand *</label>
+                <input id="vehicle_brand" maxlength="100" name="00NWU000003oN1J" type="text" placeholder="Brand" required>
+
+                <label for="vehicle_model">Vehicle Model *</label>
+                <input id="vehicle_model" maxlength="100" name="00NWU000003oN69" type="text" placeholder="Model" required>
+
+                <label for="vehicle_reg">Vehicle Registration Number </label>
+                <input id="vehicle_reg" maxlength="16" name="00NWU000003oNCb" type="text" placeholder="Registration Number" required>
+
+                <label for="service_requested">Service Requested *</label>
+                <select id="service_requested" name="00NWU000003oOJx" required>
+                    <option value="">--None--</option>
+                    <option value="Routine Maintenance">Routine Maintenance</option>
+                    <option value="Repair/Replacement">Repair/Replacement</option>
+                    <option value="Diagnostics/Check-up">Diagnostics/Check-up</option>
+                    <option value="Vehicle Inspection">Vehicle Inspection</option>
+                    <option value="Other (Please Specify)">Other (Please Specify)</option>
+                </select>
+
+                <label for="service_date">Preferred Service Date *</label>
+                <input id="service_date" name="00NWU000003oNR7" type="date" required>
+
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" name="00NWU000003oLfS" rows="5" placeholder="Any specific details or requests"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Garage Management System. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
