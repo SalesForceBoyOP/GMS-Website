@@ -89,6 +89,13 @@ form textarea {
     resize: vertical;
 }
 
+
+.center-button {
+    text-align: center;
+    margin-top: 20px; /* Optional: adds space above the button */
+}
+
+
 /* Button styles */
 form input[type="submit"], form button {
     background-color: #18bc9c;
