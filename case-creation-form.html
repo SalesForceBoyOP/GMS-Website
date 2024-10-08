@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Service</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Garage Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Form Section -->
+    <main>
+        <section class="form-section">
+            <h2>Create a Case</h2>
+                <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <FORM> element to your page.             -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DWU000009TFYV" method="POST">
+    
+        <input type=hidden name="orgid" value="00DWU000009TFYV">
+        <input type=hidden name="retURL" value="https://salesforceboyop.github.io/GMS-Website/">
+        
+        <!--  ----------------------------------------------------------------------  -->
+        <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+        <!--  these lines if you wish to test in debug mode.                          -->
+        <!--  <input type="hidden" name="debug" value=1>                              -->
+        <!--  <input type="hidden" name="debugEmail"                                  -->
+        <!--  value="pavanprabhakar628@gmail.com">                                    -->
+        <!--  ----------------------------------------------------------------------  -->
+        
+        <label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+        
+        <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+        
+        <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+        
+        <label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+        
+        <label for="description">Description</label><textarea name="description"></textarea><br>
+        
+        <input type="submit" name="submit">
+        
+        </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Garage Management System. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

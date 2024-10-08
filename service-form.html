@@ -15,8 +15,8 @@
         <h1>Garage Management System</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -27,8 +27,8 @@
             <h2>Request a Service</h2>
             <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DWU000009TFYV"
                 method="POST"
-                onsubmit="alert('Form successfully submitted!');">
-                
+                ">
+
                 <input type="hidden" name="oid" value="00DWU000009TFYV">
                 <input type="hidden" name="retURL" value="https://salesforceboyop.github.io/GMS-Website/index.html">
 
@@ -70,9 +70,6 @@
                     <option value="Vehicle Inspection">Vehicle Inspection</option>
                 </select>
 
-                <label for="service_date">Preferred Service Date *</label>
-                <input id="service_date" name="00NWU000003oNR7" type="date" required>
-
                 <label for="notes">Additional Notes</label>
                 <textarea id="notes" name="00NWU000003oLfS" rows="5" placeholder="Any specific details or requests"></textarea>
 
@@ -85,7 +82,6 @@
     <footer>
         <p>&copy; 2024 Garage Management System. All Rights Reserved.</p>
     </footer>
-
 </body>
 
 </html>
